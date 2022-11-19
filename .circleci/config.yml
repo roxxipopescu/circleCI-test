@@ -8,12 +8,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - checkout
-      - run: 
-        name: Install dependencies with Yarn, purely from the lockfile
-        command: yarn install --frozen-lockfile
       - run:
-        name: Run all linters
-        command: yarn lint
+        name: 'Install dependencies with Yarn, purely from the lockfile'
+        command: 'yarn install --frozen-lockfile'
 
 workflows:
   say-hello-workflow:
