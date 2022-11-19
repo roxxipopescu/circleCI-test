@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: 'Install dependencies with Yarn, purely from the lockfile'
-          command: 'yarn install --frozen-lockfile'
+          command: 'yarn lint'
 
 workflows:
   say-hello-workflow:
