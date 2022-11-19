@@ -9,8 +9,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: 'Install dependencies with Yarn, purely from the lockfile'
-        command: 'yarn install --frozen-lockfile'
+          name: 'Install dependencies with Yarn, purely from the lockfile'
+          command: 'yarn install --frozen-lockfile'
 
 workflows:
   say-hello-workflow:
